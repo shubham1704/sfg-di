@@ -1,6 +1,6 @@
 package com.example.practice.sfgdi.controllers;
 
-import com.example.practice.sfgdi.services.GreetingServiceImpl;
+import com.example.practice.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ class ConstrucrotControllerTest {
 
   @BeforeEach
   void setup() {
-    constructorInjectionController = new ConstructorInjectionController(new GreetingServiceImpl());
+    constructorInjectionController = new ConstructorInjectionController(new ConstructorGreetingService());
   }
 
   @Test
